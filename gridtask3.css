@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(243, 233, 220);
+    display: flex;
+    place-items: center;
+    /*This places all the items in the body section at the center*/
+    height: 100vh;
+    /*gives the items a height of 100vh, thereby pushing it down to the middle section from above the page. It helps the "align-items:center; to work well*/
+}
+
+main {
+    display: grid;
+    grid-template-areas: 'a a b  c' 'd e b c';
+    /* This code arranges the grids or containers in their shapes and areas*/
+    gap: 0px;
+    /* his gives a space inbtw the grids*/
+    /* width: px; */
+    /*This stretches the width of the containers*/
+    margin: auto;
+    /*This pushes the items to the center of the page*/
+    justify-items: center;
+}
+
+main div {
+    text-align: center;
+    padding: 2em;
+    border-radius: 0px;
+}
+
+.item-a {
+    background-color: hsl(31, 77%, 52%);
+    grid-area: a;
+    height: 15em;
+    border-radius: 5px 0px 0px 5px;
+    width: 10em;
+    color: white;
+    font-size: 12px;
+}
+
+.item-b {
+    background-color: hsl(184, 100%, 22%);
+    grid-area: b;
+    height: 15em;
+    width: 10em;
+    color: white;
+    font-size: 12px;
+}
+
+.item-c {
+    background-color: hsl(179, 100%, 13%);
+    grid-area: c;
+    height: 15em;
+    border-radius: 0px 5px 5px 0px;
+    width: 10em;
+    color: white;
+    font-size: 12px;
+}
+
+.item-d {
+    background-color: white;
+    grid-area: d;
+}
+
+.item-e {
+    background-color: rgb(44, 42, 42);
+    grid-area: e;
+}
+
+#btn1 {
+    padding: 8px;
+    border: 1px;
+    border-radius: 9px;
+    color: hsl(31, 77%, 52%);
+    font-size: 10px;
+}
+
+#btn2 {
+    padding: 8px;
+    border: 1px;
+    border-radius: 9px;
+    color: hsl(184, 100%, 22%);
+    font-size: 10px;
+}
+
+#btn3 {
+    padding: 8px;
+    border: 1px;
+    border-radius: 9px;
+    color: hsl(179, 100%, 13%);
+    font-size: 10px;
+}
+
+.main {
+    border: 1px solid rgb(122, 118, 118);
+    padding: 6em;
+}
